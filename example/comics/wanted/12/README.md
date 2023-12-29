@@ -1,0 +1,6 @@
+![1](wanted_12_01.jpg)
+![2](wanted_12_02.jpg)
+![3](wanted_12_03.jpg)
+![4](wanted_12_04.jpg)
+![5](wanted_12_05.jpg)
+![6](wanted_12_06.jpg)

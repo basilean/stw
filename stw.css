@@ -1,0 +1,111 @@
+/*
+	Spread the Word
+	Andres Basile GNU/GPL v3
+*/
+
+/* These are the default options. */
+:root {
+	--font_family: monospace;
+	--font_size: 16px;
+	--max_width: 60ch;
+	--background_color: #ffffff; /* 6 digit hex. */
+	--color: #000000;
+	--bar_size: 48px;
+}
+
+/* Barebone style to work. */
+html {
+    font-family: var(--font_family);
+	font-size: var(--font_size);
+}
+
+body {
+	color: var(--color);
+	background-color: var(--background_color);
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Links loose style when href stripped, this enforces it. */
+a {
+	color: #0000ee;
+	cursor: pointer;
+	text-decoration-line: none;
+}
+
+a:hover {
+	text-decoration-line: underline;
+}
+
+#bar button, #bar input, #bar select {
+	height: var(--bar_size);
+	width: var(--bar_size);
+	vertical-align: top;
+	background-size: calc(var(--bar_size) * .5);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+#info {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+
+#content {
+	margin-top: calc(var(--bar_size) * .75);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 3px;
+	text-align: justify;
+	max-width: var(--max_width);
+}
+
+#bar button.pushed {
+	background-color: #7f7f7f;
+}
+
+.hide {
+	display: none !important;
+}
+
+.img_menu {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAZxJREFUSIm91rFOVEEUBuAPS1QSURNrWVsQY2xcxcLQQGUilTwAttJg4hvoG0A00Udw0cTa2lhAAbSQaFZtFoo1AYo7N8zevWPmLol/cpLZc8/5/zn3zpyz5KOFPexiKjfpQgOBpUDcCuuRBR5hH18xGfnbifWVELuPuRzRdzgJtoVX2Ix8pXXCs63I9zZHYLGGLNcWcwTgzwjkv3PJZ3AcJfaxrnjvV4O1g68fxR2H3AGM4TJeYxxdPMO18LyLeXxLbOY2vlTiP4TfR3gBzxMl/8VsRsWzIbaOY0Uoty5gPYO8xEZig/fLgFv4XAloD9Gkca+S2wmcA7hZCbrRQGCiklt+k4Gb3KskHTYQuFQjOICW4dt6t4HAg0rup8CJ//CRz3tM7yQ2eIKVMcX7e4OL+IFlXA/JXTzG9wT5jOKilfE/8V5xQHpYrUua9u9WMa44lhuGW8V0RsUoGlfTZvcrl3xhBPJku66baE+j9bazgVPFprOBU+JJTgVzODA8MjvRTj9G/nJkHuBhjkAKLyOBtfMQpdDCTrDsvy2nQKjMx7A6JsoAAAAASUVORK5CYII=");
+}
+
+.img_back {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAMxJREFUSIntlD0OwjAMRh+V4Aw0M6cDNn4uADtMTOU40AU4AOIS0A5sZUgqWSGVILhT+SRPjt9nJ27hr0glwBYogXUb8AyoXNzbhFfYSVTUA3YefO9MOwwHe8eVQpRADkyBgTQolAxkXACjPYEf53qS0GrGvEEKzIGn4EzqZMgkizABWAhGLhNa2zQU9YWf1PiSjah9hA78+i9aitpj06EE2LgOVh+CjYPLRx5/2VxQI+DG+5qegL6GwawBnmrAwU5wxW7MAXstKp13RC/oDo8stuuwawAAAABJRU5ErkJggg==");
+}
+
+.img_fullscreen {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAMtJREFUSIm9lTEOwjAMRZ/LTWhmrsJeFq7AZWCBWzGl3ACJK8CQZLHSNHJSvuShsvqfk9ou2OSAF/Bdi8EIOAKj8d0qOcBTcYJeQAFuWwFK5s2AAbgrQ/1slgBXZfaI0GbAUuWpK5sBp4J5d4A2B5hjzlsBAkwxJJMfgQsbD+N/tCOM/Rl4Ax+VF8J9H4CnFZK2ov4guhUnKyDXUrk+7wZYG6ImQG5xpfE3q7SomirPAbpWXgJ0M18C6Jgxjn1tlY7wozep5gQe2FvMf8egirFfxGmqAAAAAElFTkSuQmCC");
+}
+
+/* Some custom style to be modified and extended by you. */
+#info {
+	background-color: #ffff00;
+}
+
+h1, pre.mermaid {
+	text-align: center;
+}
+
+img {
+	margin: auto;
+	display: block;
+}
+
+blockquote {
+	border-color: #0aa;
+	border-width: 0px 0px 0px 6px;
+	border-style: solid;
+	padding-left: 3px;
+}
