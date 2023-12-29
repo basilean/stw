@@ -25,7 +25,7 @@ const StW = {
 		for (const key of Object.keys(this.options)) {
 			let val = this.cache_get(key);
 			if (val == null) {
-				val = getComputedStyle(document.documentElement).getPropertyValue('--' + key);
+				val = getComputedStyle(document.documentElement).getPropertyValue('--' + key).trim();
 			}
 			else {
 				document.documentElement.style.setProperty('--' + key, val);
